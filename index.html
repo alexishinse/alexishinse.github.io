@@ -653,6 +653,69 @@
                             
 							<h2>Difficultés</h2>
 							<br/>
+							<h3><a name="_Toc443912169"></a><a name=h.k5hoe7xky3li></a>Construire une liste
+							à partir d’un adaptateur de listes personnalisé</h3>
+
+							<p class=MsoNormal style='text-align:justify'>On utilise un adaptateur de listes personnalisé puisqu’on a
+							construit un Arraylist d’objets pour stocker toutes les informations de chaque
+							fichier&nbsp;mp3 que nous avons dans notre liste, mais pour arriver à ce
+							résultat nous avons du consulter plusieurs alternatives (la majorité des
+							«solutions» trouvées étaient dépassées et pour une raison quelconque on a
+							trouvé l’accès aux données très restreint. Nous avons dû adapter notre projet
+							conséquemment, puisque nous n’avons pas eu les libertés que nous aurions voulu
+							avoir à la base par exemple avec notre «répertoriage» de la librairie.
+							Cependant, ceci a été positif puisque nous avons restructuré notre architecture
+							et notre concept vers quelque chose de beaucoup plus adaptable et facile à
+							consulter. Notre idée d’utiliser du XML pour stocker notre librairie était
+							probablement plus optimisée, mais elle était très restreinte et plus difficile
+							à la lecture. </p>
+
+
+							<p class=MsoNormal style='text-align:justify'>Nous en sommes arrivés à l’implémenter par du débogage
+							fréquent et de la recherche d’information exhaustive. Souvent ça aide beaucoup
+							plus avoir un exemple de code, au lieu de juste de la documentation sur chaque
+							fonction. Nous avons allié plusieurs exemples et solutions trouvées sur le net
+							pour finalement avoir notre résultat désiré.</p>
+
+							<h3><a name="_Toc443912170"></a><a name=h.eyorfd67nggd></a>Obtenir la pochette
+							d’album pour une chanson donnée</h3>
+
+							<p class=MsoNormal style='text-align:justify'>On a aussi eu de la difficulté avec les couvertures d’album,
+							pour une raison quelconque cette information sous Android n’est pas contenue
+							dans les données&nbsp;ID3 du fichier MP3, alors ça a causé qu’on n’a pas eu
+							accès à l’image qui constituait la pochette d’album. C’est une fonctionnalité
+							qu’on aurait aimé avoir, mais décidément qu’avec plus de temps nous aurions pu
+							y arriver.</p>
+
+							<h3><a name="_Toc443912171"></a><a name=h.nj7spii3fzvy></a>Lire et stocker un
+							fichier XML personnalisé</h3>
+
+							<p class=MsoNormal style='text-align:justify'>La lecture de fichiers XML avec des balises personnalisées a
+							été beaucoup plus complexe que nous le pensions, nous avons eu de la difficulté
+							à trouver de la documentation sur où on pourrait loger le fichier XML personnalisé
+							dans l’application (la totalité des tutoriaux d’analyse et décorticage de XML
+							personnalisés utilisait des XML qui étaient sur internet, et nous savions que
+							nous ne pouvions pas opérer avec un XML statique. De plus, la construction
+							d’une librairie de musique à l’aide d’un XML aurait compliqué les choses, une Arraylist
+							d’objets est beaucoup plus logique, et maintenant on comprend mieux pourquoi
+							l’utilisation d’un XML avec des balises personnalisées est aussi impopulaire
+							sous Android.</p>
+
+							<h3><a name="_Toc443912172"></a><a name=h.u0ai9foe4nvf></a>Comparaison avec
+							l’échéancier initial</h3>
+
+							<p class=MsoNormal style='text-align:justify'>Il y a beaucoup de différences surtout du mi- développement
+							à la fin du développement. Nous avions pensé une architecture différente alors
+							ça explique pourquoi il y a eu des divergences. Nous sommes satisfaits de la
+							constance de productivité tout au cours de la session et nous avons bien
+							organisé notre temps durant le développement. Nous nous sommes consultés
+							souvent par messagerie pour nous assurer que chaque tâche allait se faire à
+							temps, et qu’on n’avait rien oublié. Nous n’avons rien à nous reprocher, selon
+							notre conclusion mutuelle, sur la manière qu’on a géré notre temps. L’important
+							en fin de compte c’est que le projet soit fini à temps.</p>
+
+							<img src="img/difficultes 1.png" style="border:1px solid black"  alt="">			
+
 																					
 							
 							<br/>			
@@ -664,6 +727,182 @@
         </div>
     </div>
 	
+	<div class="portfolio-modal modal fade" id="analyseResultats" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+							<h2>Analyse des résultats</h2>
+							<br/>
+				
+							<p class=MsoNormal style='text-align:justify'>Avec notre démarche d’expérimentation et nos étapes suivies
+							décrites plus haut, nous avons mené notre application à terme avec succès, et
+							nous pouvons définitivement attribuer cette réussite à cette technique de documentation
+							préemptive, mais exhaustive, suivie de débogages fréquents, pour s’assurer de
+							la fonctionnalité de chaque méthode.</p>
+
+				
+							<p class=MsoNormal style='text-align:justify'>Bien sûr, ça a été dans un certain sens dommage que nous
+							n’ayons pas pu mener notre idée de XML comme base de données, mais en même
+							temps nous avons trouvé beaucoup mieux à l’aide justement de nos techniques de
+							notre expérimentation. Autre cet aspect, nous avons mené à terme toutes les
+							fonctionnalités qu’on s’était proposées, dans le temps alloué. Nos hypothèses
+							sur l’échéancier initial étaient assez prémonitoires et nous croyons que ça
+							nous a beaucoup aidés de nous structurer du tout début du projet.</p>
+
+							<p class=MsoNormal style='text-align:justify'>Nous n’avons réellement pas d’aspects à reprocher à notre
+							expérimentation et nous pensons l’adopter activement dans plusieurs de nos
+							prochains projets, puisqu’elle permet de trouver des solutions plus efficaces
+							pendant le développement, et qu’elle aide aussi beaucoup à estimer quel est le
+							temps nécessité pour chaque fonctionnalité qu’on s’était proposés.</p>
+
+							<br/>			
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="portfolio-modal modal fade" id="conclusionRecherche" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+							<h2>Conclusion de la recherche</h2>
+							<br/>
+				
+							<p class=MsoNormal style='text-align:justify'>Les travaux effectués nous ont permis de valider nos
+							hypothèses et nos attentes, puisqu’ils nous ont permis d’amasser de
+							l’expérience qui nous aidera encore plus dans nos hypothèses dans nos prochains
+							projets. </p>
+
+							<p class=MsoNormal style='text-align:justify'>Nous avons appris, grâce à toute notre expérimentation, que
+							parfois des outils qu’on pensait utiliser au début de la recherche, ne sont pas
+							nécessairement les mêmes qui seront utilisés à la fin du développer. Cette
+							application était une expérience d’apprentissage de valeur. Nous avons sur
+							certains points vraiment bien estimé notre développement par exemple avec
+							l’utilisation du MediaPlayer, mais sur quelques aspects moindres ce n’était pas
+							le cas, et je crois que ça sera assez typique de chaque projet qu’on
+							développera au futur, malgré que ces incongruences risquent de se diminuer avec
+							le temps, puisqu’on accumulera plus de savoir sur les différents outils
+							disponibles à nous. </p>
+
+							<p class=MsoNormal style='text-align:justify'>Une manière d’augmenter notre application serait d’y inclure
+							le visionnement de la pochette, un système de listes de lecture, la possibilité
+							d’écouter des chansons qui ne sont pas des mp3, le visionnement de vidéos et
+							aussi une manière d’y instaurer un équaliseur audio de qualité. Il y a beaucoup
+							de pistes possibles qu’on pourrait prendre comme nos prochaines investigations,
+							alors ça reste un terrain assez ambigu.<br clear=all style='page-break-before:
+							always'>
+							</p>
+
+							<br/>			
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+		<div class="portfolio-modal modal fade" id="bibliographie" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+							<h2>Bibliographie et téléchargements</h2>
+							<br/>
+				
+							<h3  style='text-align:justify' ><a name="_Toc443912176"></a><a name=h.vu608rri0tbe></a>Téléchargements </h3>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.egvlt3f456l></a><span lang=EN-CA>Android Studio :</span></p>
+
+							<p class=MsoNormal  style='text-align:justify'><a name=h.k3wfukdqsgh1></a><a
+							href="http://developer.android.com/sdk/index.html?gclid=CjwKEAiAgKu2BRDu1OGw3-KXokwSJAB_Yy2QVILf196Z0Av7lTetrs43uC7VEumQRF2VbgrUgXD7qxoCAAjw_wcB"><span
+							lang=EN-CA style='color:#1155CC'>http://developer.Android.com/sdk/index.html?gclid=CjwKEAiAgKu2BRDu1OGw3-KXokwSJAB_Yy2QVILf196Z0Av7lTetrs43uC7VEumQRF2VbgrUgXD7qxoCAAjw_wcB</span></a></p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.402y11vvq8gl></a>LG PC Suite (pour permettre le
+							débogage sur cellulaires LG&nbsp;G3) :</p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.3nypjwp5i7c></a><a
+							href="http://www.lg.com/ca_en/support/pc-suite"><span style='color:#1155CC'>http://www.lg.com/ca_en/support/pc-suite</span></a></p>
+
+							<h3  style='text-align:left'><a name="_Toc443912177"></a><a name=h.2ootq7j7ovn0></a>Informations pour le
+							développement Android</h3>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.syi1bnufwa8e></a>Cours introductif sur Android :</p>
+
+							<p class=MsoNormal style='text-align:justify'><a
+							href="https://openclassrooms.com/courses/creez-des-applications-pour-android"><span
+							style='color:#1155CC'>https://openclassrooms.com/courses/creez-des-applications-pour-Android</span></a></p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.6nryz6pte7yy></a>MediaPlayer pour Android :</p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.jurtzwjbpxsg></a><a
+							href="http://developer.android.com/reference/android/media/MediaPlayer.html"><span
+							style='color:#1155CC'>http://developer.Android.com/reference/Android/media/MediaPlayer.html</span></a></p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.caq18rr36k7y></a>Custom List Adapter :</p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.np30dwchnx30></a><a
+							href="http://stackoverflow.com/questions/8166497/custom-adapter-for-list-view"><span
+							style='color:#1155CC'>http://stackoverflow.com/questions/8166497/custom-adapter-for-list-view</span></a></p>
+
+							<h3 style='text-align:left'><a name="_Toc443912178"></a><a name=h.910yd2x24d8g></a>Informations pour
+							l’XML et le DTD</h3>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.oyj71q9fdrfl></a>Cours introductif sur le XML : </p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.9rk5jc6xwx20></a><a
+							href="https://openclassrooms.com/courses/structurez-vos-donnees-avec-xml"><span
+							style='color:#1155CC'>https://openclassrooms.com/courses/structurez-vos-donnees-avec-xml</span></a></p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.3d8m7jrkqwog></a>Editix pour la création de XML
+							avec du DTD qui est testé: </p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.8cnyqhcnf4dv></a><a
+							href="http://www.editix.com/download.html"><span style='color:#1155CC'>http://www.editix.com/download.html</span></a></p>
+
+							<p class=MsoNormal style='text-align:justify'><a name=h.t4ajtzeggcbg></a>XML Parser :</p>
+
+							<p class=MsoNorma style='text-align:justify'l><a name=h.8rrykbhe2vmm></a><a
+							href="http://developer.android.com/training/basics/network-ops/xml.html"><span
+							style='color:#1155CC'>http://developer.Android.com/training/basics/network-ops/xml.html</span></a></p>
+							
+							<br/>			
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	
 
     <!-- jQuery -->
